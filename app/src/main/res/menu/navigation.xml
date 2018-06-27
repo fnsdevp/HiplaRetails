@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/nav_home"
+        android:title="@null" />
+
+    <item
+        android:id="@+id/navigation_dashboard"
+        android:icon="@drawable/nav_tag"
+        android:title="@null" />
+
+    <item
+        android:id="@+id/navigation_notifications1"
+        android:icon="@drawable/nav_card"
+        android:title="@null"
+        app:showAsAction="always"
+        app:actionLayout="@layout/menu_custom"/>
+    <item
+        android:id="@+id/navigation_notifications2"
+        android:icon="@drawable/nav_coupon"
+        android:title="@null" />
+    <item
+        android:id="@+id/navigation_notifications3"
+        android:icon="@drawable/nav_map"
+        android:title="@null" />
+
+</menu>

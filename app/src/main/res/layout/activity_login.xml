@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="activity"
+            type="com.fnspl.hiplaretails.activity.LoginActivity"/>
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:onClick="setupUI"
+        tools:context=".activity.LoginActivity">
+
+        <com.fnspl.hiplaretails.view.TextViewRegular
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:textSize="@dimen/text_medium_extra"
+            android:text="@string/sign_in"
+            android:textColor="@color/sign_in_title" />
+        <View
+            android:id="@+id/view_space"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/tv_title"
+            android:background="@color/white_light_medium" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/view_space"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:layout_marginRight="@dimen/_30sdp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_95sdp"
+                android:src="@drawable/hipla_retail_logo"
+                android:contentDescription="@null"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:src="@drawable/email_icon"
+                    />
+                <com.fnspl.hiplaretails.view.EditTextRegular
+                    android:id="@+id/et_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/email_address"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:padding="@dimen/_10sdp"
+                    android:text=""
+                    android:background="@color/white"
+                    android:textSize="@dimen/text_medium" />
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white_light_medium"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_10sdp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:src="@drawable/password_icon"
+
+
+                    />
+                <com.fnspl.hiplaretails.view.EditTextRegular
+                    android:id="@+id/et_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/password"
+                    android:text=""
+                    android:layout_marginLeft="@dimen/_1sdp"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword"
+                    android:background="@color/white"
+                    android:padding="@dimen/_8sdp"
+                    android:textSize="@dimen/text_medium" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white_light_medium"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_20sdp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <com.fnspl.hiplaretails.view.TextViewRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/_3sdp"
+                    android:textSize="@dimen/text_medium"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:text="@string/remember_me"/>
+                <Switch
+                    android:id="@+id/switch_remember"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp" />
+            <com.fnspl.hiplaretails.view.TextViewRegular
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_12sdp"
+                android:text="@string/signin"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:textAllCaps="false"
+                android:textSize="@dimen/text_medium_extra"
+                android:onClick="@{()->activity.signIn()}"
+                android:clickable="true"
+                android:focusable="true"
+                android:textStyle="normal"
+                android:background="@drawable/splash_btn_background_light_blue"
+                 />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_8sdp"
+                android:orientation="horizontal">
+                <com.fnspl.hiplaretails.view.TextViewRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_medium"
+                    android:text="Have not registered"/>
+                <com.fnspl.hiplaretails.view.TextViewRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/_3sdp"
+                    android:textSize="@dimen/text_medium"
+                    android:onClick="@{()->activity.signUp()}"
+                    android:textColor="@color/froly_deep"
+                    android:text="@string/signup"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+
+
+    </RelativeLayout>
+</layout>

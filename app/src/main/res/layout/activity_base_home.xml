@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activity.BaseHomeActivity"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        >
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/rl_tab"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/content_home"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_48sdp"
+                android:background="#d5d5d5">
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_48sdp"
+                        android:background="@color/white_light">
+
+                        <LinearLayout
+                            android:layout_width="@dimen/_50sdp"
+                            android:layout_height="match_parent"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:id="@+id/img_home"
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/_40sdp"
+                                android:padding="@dimen/_8sdp"
+                                android:src="@drawable/user_icon" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                        <LinearLayout
+                            android:layout_width="@dimen/_50sdp"
+                            android:layout_height="match_parent"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/_40sdp"
+                                android:padding="@dimen/_10sdp"
+                                android:src="@drawable/search" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_4sdp">
+
+                        <ImageView
+                            android:layout_width="@dimen/_65sdp"
+                            android:layout_height="@dimen/_64sdp"
+                            android:padding="@dimen/_2sdp"
+                            android:src="@drawable/header_logo" />
+                    </LinearLayout>
+                </FrameLayout>
+
+
+            </LinearLayout>
+
+
+        </FrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#f2f2f2"
+            android:paddingTop="1dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingBottom="@dimen/_4sdp"
+                android:paddingTop="@dimen/_4sdp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="homeButton"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:padding="@dimen/_6sdp">
+
+                    <ImageView
+                        android:id="@+id/img_bottom_home"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:src="@drawable/analysis_selecter" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="homeTag"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:padding="@dimen/_6sdp">
+
+                    <ImageView
+                        android:id="@+id/img_bottom_tag"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:src="@drawable/nav_tag" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="homeCard"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:padding="@dimen/_6sdp">
+
+                    <ImageView
+                        android:id="@+id/img_bottom_card"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:src="@drawable/nav_card" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="homeCoupon"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:padding="@dimen/_6sdp">
+
+                    <ImageView
+                        android:id="@+id/img_bottom_coupon"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:src="@drawable/nav_coupon" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="homeMap"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:padding="@dimen/_6sdp">
+
+                    <ImageView
+                        android:id="@+id/img_bottom_map"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:src="@drawable/nav_map" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+
+        <android.support.design.widget.BottomNavigationView
+            android:id="@+id/navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="0dp"
+            android:layout_marginStart="0dp"
+            android:background="?android:attr/windowBackground"
+            android:visibility="gone"
+            app:menu="@menu/navigation">
+            <!--<include layout="@layout/menu_custom"/>-->
+        </android.support.design.widget.BottomNavigationView>
+
+        <!--app:menu="@menu/navigation"-->
+    </RelativeLayout>
+
+

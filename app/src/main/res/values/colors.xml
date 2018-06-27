@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="light_gray">#8B9AA5</color>
+    <color name="gray">#485055</color>
+    <color name="light_blue">#0080DD</color>
+    <color name="light_blue_low">#3B93D1</color>
+    <color name="tab_select">#0080DD</color>
+    <color name="tab_selectd">#ffbf63</color>
+
+
+    <color name="astral_new">#f5f5f5</color>
+    <color name="bostonBlue">#f9f9f9</color>
+    <color name="astral">#ededed</color>
+    <color name="astral_light">#a3f3d4</color>
+    <color name="sea_pink">#ef9494</color>
+    <color name="colorAccent1">#FF4081</color>
+    <color name="chetwode_blue">#9080e9</color>
+    <color name="scorpion">#956b6872</color>
+    <color name="black_light">#635c64</color>
+    <color name="black">#000000</color>
+    <color name="midnight">#081137</color>
+    <color name="deep_cove">#060f36</color>
+    <color name="shuttle_gray">#64687c</color>
+    <color name="tangaroa">#131b40</color>
+    <color name="silver">#bababa</color>
+    <color name="silver_chalice">#9f9f9f</color>
+    <color name="iron">#d5d7dd</color>
+    <color name="white">#ffffff</color>
+    <color name="white_light">#F6F6F6</color>
+    <color name="tab_unselected_color">#C0C2C7</color>
+    <color name="white_light_medium">#bcbcbc</color>
+    <color name="black_deep">#1A1A1A</color>
+    <color name="home_text_title">#1F1F1F</color>
+    <color name="sign_in_title">#090909</color>
+
+    <color name="magic_mint">#a3f3d4</color>
+    <color name="scooter">#21c8d9</color>
+    <color name="smoky">#5b507a</color>
+    <color name="danube">#5190d1</color>
+    <color name="scampi">#6b5e97</color>
+    <color name="froly">#fb7274</color>
+    <color name="froly_deep">#C27771</color>
+    <color name="pesto">#787432</color>
+    <color name="tacao">#fab992</color>
+    <color name="sky_blue">#42e0fd</color>
+    <color name="black_haze">#f7f8f9</color>
+    <color name="como">#517e6d</color>
+    <color name="viridian">#3d8370</color>
+    <color name="wild_sand">#f7f5f5</color>
+    <color name="geraldine">#ec8f8f</color>
+    <color name="melrose">#c7bff4</color>
+    <color name="wild_blue_yonder">#7f87aa</color>
+    <color name="pelorous">#20adc6</color>
+    <color name="storm_gray">#727587</color>
+    <color name="silver_tree">#46bd95</color>
+    <color name="aquamarine">#53f1c4</color>
+    <color name="dull_lavender">#a497ed</color>
+    <color name="bombay">#afb1ba</color>
+    <color name="alto">#dbdbdb</color>
+    <color name="goldenrod">#fcdb77</color>
+    <color name="blizzard_blue">#a3ebf3</color>
+    <color name="perano">#a3bdf3</color>
+    <color name="biloba_flower">#bba3f3</color>
+    <color name="lavender_rose">#eea3f3</color>
+    <color name="indigo_new">#C70039</color>
+    <color name="shakespeare">#40b4e2</color>
+    <color name="color_selected">#006EBE</color>
+
+    <color name="st_tropaz">#375697</color>price_color
+    <color name="cinnabar">#e64137</color>
+    <color name="broom">#fff322</color>
+    <color name="broom_deep">#ffde0a</color>
+    <color name="tuatara">#363636</color>
+    <color name="concord">#7d7d7d</color>
+    <color name="mine_shaft">#2a2a2a</color>
+    <color name="chicago">#565655</color>
+    <color name="sun">#ffad11</color>
+    <color name="apple">#00a31b</color>
+
+    <color name="red">#ef000f</color>
+    <color name="green">#03b208</color>
+    <color name="blue">#0160a4</color>
+    <color name="brown">#dd691c</color>
+    <color name="yellow">#ffeb34</color>
+    <color name="rnd1">#70B3EC</color>
+    <color name="rnd2">#B489F4</color>
+    <color name="rnd3">#E79B9B</color>
+
+    <color name="openChatNicknameMe">#333333</color>
+    <color name="openChatNicknameOther">#4a4a54</color>
+    <color name="price_color">#BB293F</color>
+    <color name="tab_selected_color_dialog">#505050</color>
+    <color name="tab_color_dialog_tranperant">#50505050</color>
+    <color name="text_out_of_stock">#C4637A</color>
+    <color name="text_un_select">#AAAAAA</color>
+    <color name="text_select">#3D4650</color>
+    <color name="white_tranperant">#80e9e9e9</color>
+    <color name="product_page_theme">#1F425B</color>
+
+
+</resources>

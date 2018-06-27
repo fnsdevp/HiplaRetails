@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/_23sdp"
+    android:paddingRight="@dimen/_23sdp"
+    android:background="@android:color/transparent"
+    android:gravity="center"
+    >
+
+    <LinearLayout
+        android:id="@+id/ll_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/_3sdp"
+        android:gravity="center">
+        <RadioButton
+            android:id="@+id/rd_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/RatingBar"
+            android:background="@color/white_tranperant"
+            />
+        <com.fnspl.hiplaretails.view.TextViewRegular
+            android:id="@+id/tv_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_medium"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/_3sdp"
+            android:paddingTop="@dimen/_3sdp"
+            android:textColor="@color/text_un_select"
+            android:text="S"/>
+        <com.fnspl.hiplaretails.view.TextViewLight
+            android:id="@+id/tv_out_of_store"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_small_light"
+            android:textColor="@color/red"
+            android:text="@string/out_of_stock"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/white_light_medium"/>
+
+
+
+
+</LinearLayout>

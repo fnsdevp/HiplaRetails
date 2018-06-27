@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.BaseHomeActivity"
+
+    >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_48sdp"
+                android:background="@drawable/tool_bar"
+                app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+
+
+                    <LinearLayout
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/_minus6sdp"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/img_home"
+                            android:layout_width="@dimen/_35sdp"
+                            android:layout_height="@dimen/_35sdp"
+                            android:padding="@dimen/_10sdp"
+                            android:src="@drawable/close_icon" />
+                    </LinearLayout>
+
+                    <com.fnspl.hiplaretails.view.TextViewRegular
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/_16sdp"
+                        android:textAllCaps="true"
+                        android:gravity="center"
+                        android:lines="1"
+                        android:text="Plain dress"/>
+
+                    <LinearLayout
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/_6sdp"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="@dimen/_35sdp"
+                            android:layout_height="@dimen/_35sdp"
+                            android:padding="@dimen/_7sdp"
+                            android:src="@drawable/info_icon" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </android.support.v7.widget.Toolbar>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white_light_medium"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/_48sdp"
+                    android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+                            <android.support.v4.view.ViewPager
+                                android:id="@+id/view_pager"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                >
+
+                            </android.support.v4.view.ViewPager>
+
+
+                        </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/white_light_medium"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_48sdp"
+                                android:layout_gravity="bottom"
+                                android:background="@color/white_light">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center|left">
+
+                                    <com.fnspl.hiplaretails.view.TextViewRegular
+                                        android:id="@+id/tv_price"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:paddingLeft="@dimen/_4sdp"
+                                        android:textSize="@dimen/_10ssp"
+                                        android:text="Rs 2500"/>
+
+                                    <com.fnspl.hiplaretails.view.TextViewRegular
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:paddingLeft="@dimen/_4sdp"
+                                        android:textColor="@color/price_color"
+                                        android:textSize="@dimen/text_small_light"
+                                        android:text="Rs 200.00"/>
+
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="@dimen/_65sdp"
+                                    android:layout_height="wrap_content"
+                                    />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:paddingRight="@dimen/_3sdp"
+                                    android:gravity="center|right">
+
+                                    <ImageView
+                                        android:id="@+id/img_barcode"
+                                        android:layout_width="@dimen/_28sdp"
+                                        android:layout_height="@dimen/_28sdp"
+                                        android:layout_margin="@dimen/_5sdp"
+                                        android:src="@drawable/barcode_scanner" />
+                                    <ImageView
+                                        android:id="@+id/img_navigation"
+                                        android:layout_width="@dimen/_28sdp"
+                                        android:layout_height="@dimen/_28sdp"
+                                        android:layout_margin="@dimen/_5sdp"
+                                        android:src="@drawable/navigate_icon" />
+                                    <ImageView
+                                        android:id="@+id/img_more"
+                                        android:layout_width="@dimen/_28sdp"
+                                        android:layout_height="@dimen/_28sdp"
+                                        android:layout_margin="@dimen/_5sdp"
+                                        android:src="@drawable/more_details_icon" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                >
+
+                                <ImageView
+                                    android:layout_width="@dimen/_65sdp"
+                                    android:layout_height="@dimen/_64sdp"
+                                    android:src="@drawable/header_logo" />
+                            </LinearLayout>
+                        </FrameLayout>
+
+
+                    </LinearLayout>
+
+                    <!--<LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/_8sdp"
+                        android:gravity="center"
+                        android:background="@drawable/rectangle_lisght_blue">
+                        <ImageView
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_25sdp"
+                            android:src="@drawable/location_tracker"
+                            />
+                        <com.fnspl.hiplaretails.view.TextViewSamiBold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/_15ssp"
+                            android:padding="@dimen/_4sdp"
+                            android:textColor="@color/white"
+                            android:text="@string/navigate"/>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/_8sdp"
+                        android:gravity="center"
+                        android:background="@drawable/rectangle_lisght_blue">
+                        <com.fnspl.hiplaretails.view.TextViewSamiBold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/_15ssp"
+                            android:padding="@dimen/_4sdp"
+                            android:textColor="@color/white"
+                            android:text="Product Scan"/>
+
+                    </LinearLayout>-->
+
+                </LinearLayout>
+            </FrameLayout>
+
+
+
+
+        </LinearLayout>
+
+
+
+</RelativeLayout>

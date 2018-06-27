@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "324752262962",
+    "firebase_url": "https://hipla-retail.firebaseio.com",
+    "project_id": "hipla-retail",
+    "storage_bucket": "hipla-retail.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:324752262962:android:b1e68ff636efa56d",
+        "android_client_info": {
+          "package_name": "com.fnspl.hiplaretails"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "324752262962-km9dff7j5cun2ug97k4nsqh01luh5i8q.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "324752262962-km9dff7j5cun2ug97k4nsqh01luh5i8q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNu7SuZYdOLYEDUj9f-7HMUE71q5moeZo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

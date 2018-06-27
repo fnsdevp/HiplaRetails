@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <data>
+        <variable
+            name="activity"
+            type="com.fnspl.hiplaretails.activity.LandingActivity"/>
+
+    </data>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/splash_background"
+        tools:context=".activity.LandingActivity">
+
+
+        <LinearLayout
+            android:id="@+id/ll_logo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/ll_bottom"
+            android:gravity="center"
+            android:layout_marginRight="@dimen/_16sdp"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="@dimen/_155sdp"
+                android:layout_height="@dimen/_155sdp"
+                android:scaleType="fitXY"
+                android:src="@drawable/hipla_app_logo_round"
+                android:contentDescription="@null"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_20sdp"/>
+            <com.fnspl.hiplaretails.view.TextViewRegular
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_5sdp"
+                android:text="@string/splash_desc"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_large_extra"
+                android:gravity="center"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:orientation="vertical"
+            android:layout_marginBottom="@dimen/_30sdp"
+            >
+
+            <com.fnspl.hiplaretails.view.TextViewLight
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_11sdp"
+                android:text="@string/signup"
+                android:textSize="@dimen/text_medium_extra"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:onClick="@{()->activity.signUp()}"
+                android:clickable="true"
+                android:focusable="true"
+                android:textAllCaps="false"
+                android:background="@drawable/splash_btn_background_gray"
+                tools:ignore="OnClick" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_15sdp"/>
+            <com.fnspl.hiplaretails.view.TextViewLight
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_11sdp"
+                android:text="@string/signin"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:textSize="@dimen/text_medium_extra"
+                android:onClick="@{()->activity.signIn()}"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="@drawable/sign_up_btn_background_light_blue"
+                tools:ignore="OnClick" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+</layout>

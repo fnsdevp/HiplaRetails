@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="fragment"
+            type="com.fnspl.hiplaretails.fragment.HomeFragment" />
+    </data>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:descendantFocusability="blocksDescendants"
+        android:id="@+id/home_content"
+        tools:context=".fragment.HomeFragment">
+
+        <!-- TODO: Update blank fragment layout -->
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/viewpager_backgroung"
+                    android:orientation="vertical">
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/viewpager"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_160sdp"
+                        android:focusable="true">
+
+                    </android.support.v4.view.ViewPager>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|bottom"
+                        android:layout_marginBottom="@dimen/_8sdp"
+                        android:background="@drawable/indicater_background_light"
+                        android:gravity="center">
+
+                        <android.support.design.widget.TabLayout
+                            android:id="@+id/tab_layout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_10sdp"
+                            android:layout_gravity="center"
+                            app:tabBackground="@drawable/tab_selecter_tutorial"
+                            app:tabGravity="center"
+                            app:tabIndicatorHeight="0dp"
+                            app:tabPaddingEnd="@dimen/_10sdp"
+                            app:tabPaddingStart="@dimen/_4sdp"
+                            app:tabPaddingTop="2dp" />
+
+                    </LinearLayout>
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:paddingBottom="@dimen/_8sdp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <com.fnspl.hiplaretails.view.TextViewRegular
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:paddingTop="@dimen/_10sdp"
+                        android:paddingBottom="@dimen/_2sdp"
+                        android:text="@string/shop_by_store"
+                        android:textAllCaps="true"
+                        android:textSize="@dimen/text_medium"
+                        android:textColor="@color/home_text_title" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recycler_shop_by_store"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+
+                    </android.support.v7.widget.RecyclerView>
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/white_light_medium"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_recommended"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white_light"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <com.fnspl.hiplaretails.view.TextViewRegular
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white_light"
+                        android:gravity="center"
+                        android:padding="@dimen/_6sdp"
+                        android:text="@string/recommended"
+                        android:textAllCaps="true"
+                        android:textSize="@dimen/text_medium"
+                        android:textColor="@color/home_text_title" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recycler_recommended"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_3sdp"
+                        android:layout_marginRight="@dimen/_3sdp"
+                        >
+
+                    </android.support.v7.widget.RecyclerView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_favourite"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white_light"
+                    android:visibility="visible"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <com.fnspl.hiplaretails.view.TextViewRegular
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white_light"
+                        android:gravity="center"
+                        android:padding="@dimen/_6sdp"
+                        android:text="@string/favourites"
+                        android:textAllCaps="true"
+                        android:textSize="@dimen/text_medium"
+                        android:textColor="@color/home_text_title" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recycler_favourite"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_3sdp"
+                        android:layout_marginRight="@dimen/_3sdp"
+                        >
+
+                    </android.support.v7.widget.RecyclerView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_recently_browsed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white_light"
+                    android:orientation="vertical">
+
+                    <com.fnspl.hiplaretails.view.TextViewRegular
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white_light"
+                        android:gravity="center"
+                        android:padding="@dimen/_6sdp"
+                        android:text="@string/recently_browsed"
+                        android:textSize="@dimen/text_medium"
+                        android:textAllCaps="true"
+                        android:textColor="@color/home_text_title" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recycler_recently_added"
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="@dimen/_3sdp"
+                        android:layout_marginRight="@dimen/_3sdp"
+                        android:layout_height="wrap_content">
+
+                    </android.support.v7.widget.RecyclerView>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+    </FrameLayout>
+</layout>

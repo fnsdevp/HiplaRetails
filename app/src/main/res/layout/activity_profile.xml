@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="activity"
+            type="com.fnspl.hiplaretails.activity.ProfileActivity"/>
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:onClick="setupUI"
+        tools:context=".activity.ProfileActivity">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <include layout="@layout/toolbar_back"/>
+
+            <android.support.v4.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:gravity="center">
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/img_profile"
+                                android:layout_width="@dimen/_80sdp"
+                                android:layout_height="@dimen/_80sdp"
+                                app:civ_border_color="@color/white_light"
+                                app:civ_border_width="2dp"
+                                android:onClick="@{()->activity.imageDialogCall()}"
+                                android:src="@drawable/header_logo"/>
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:paddingRight="@dimen/_12sdp"
+                                android:paddingTop="@dimen/_10sdp"
+                                android:tint="@color/white_light_medium"
+                                android:src="@drawable/circle_edit_outline"/>
+                        </FrameLayout>
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_16sdp"
+                        android:orientation="vertical"
+                        android:background="@drawable/rectangle_white">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_margin="@dimen/_6sdp"
+                            android:background="@color/white_light_medium"
+                            >
+
+
+                            <EditText
+                                android:id="@+id/et_email"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="@dimen/_6sdp"
+                                android:textColor="@color/black"
+                                android:imeOptions="actionNext"
+                                android:hint="Email"
+                                android:inputType="textEmailAddress"
+                                android:text=""
+                                android:layout_marginBottom="1dp"
+                                android:background="@color/white"/>
+
+
+
+                            <EditText
+                                android:id="@+id/et_mobile"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="@dimen/_6sdp"
+                                android:textColor="@color/black"
+                                android:imeOptions="actionNext"
+                                android:inputType="phone"
+                                android:maxLength="10"
+                                android:text=""
+                                android:hint="Mobile"
+                                android:layout_marginBottom="1dp"
+                                android:background="@color/white"/>
+
+
+                            <EditText
+                                android:id="@+id/et_password"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="@dimen/_6sdp"
+                                android:textColor="@color/black"
+                                android:imeOptions="actionNext"
+                                android:inputType="textPassword"
+                                android:hint="******"
+                                android:layout_marginBottom="1dp"
+                                android:background="@color/white"/>
+
+
+
+                            <EditText
+                                android:id="@+id/et_f_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="@dimen/_6sdp"
+                                android:textColor="@color/black"
+                                android:imeOptions="actionNext"
+                                android:inputType="textCapSentences"
+                                android:hint="First Name"
+                                android:layout_marginBottom="1dp"
+                                android:background="@color/white"/>
+
+
+
+                            <EditText
+                                android:id="@+id/et_l_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="@dimen/_6sdp"
+                                android:textColor="@color/black"
+                                android:imeOptions="actionNext"
+                                android:inputType="textCapSentences"
+                                android:text=""
+                                android:hint="Last Name"
+                                android:layout_marginBottom="1dp"
+                                android:background="@color/white"/>
+
+
+
+                            <EditText
+                                android:id="@+id/et_address"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="@dimen/_6sdp"
+                                android:textColor="@color/black"
+                                android:imeOptions="actionNext"
+                                android:inputType="textCapSentences"
+                                android:hint="Address"
+                                android:layout_marginBottom="1dp"
+                                android:background="@color/white"/>
+
+
+                            <EditText
+                                android:id="@+id/et_pincode"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="@dimen/_6sdp"
+                                android:textColor="@color/black"
+                                android:imeOptions="actionDone"
+                                android:inputType="number"
+                                android:hint="Pin Code"
+                                android:maxLength="6"
+                                android:background="@color/white"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_20sdp"
+                        android:layout_marginLeft="@dimen/_16sdp"
+                        android:layout_marginRight="@dimen/_16sdp"
+                        android:orientation="vertical">
+                        <com.fnspl.hiplaretails.view.TextViewRegular
+                            android:id="@+id/tv_update"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/_6sdp"
+                            android:textSize="@dimen/_16ssp"
+                            android:gravity="center"
+                            android:text="UPDATE"
+                            android:onClick="@{()->activity.profileSubmit()}"
+                            android:textColor="@color/shakespeare"
+                            android:background="@drawable/rectangle_blue_line"/>
+
+
+
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v4.widget.NestedScrollView>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

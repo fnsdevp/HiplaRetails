@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/_92sdp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_3sdp"
+    android:layout_marginLeft="@dimen/_6sdp"
+    android:id="@+id/ll_main"
+    android:background="@color/white_light"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_120sdp"
+        app:cardCornerRadius="@dimen/_3sdp"
+        app:cardElevation="@dimen/_5sdp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_3sdp"
+                android:scaleType="fitXY"
+                android:layout_weight="1"
+                android:src="@drawable/category_demo" />
+
+            <ImageView
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:paddingRight="@dimen/_2sdp"
+                android:paddingTop="@dimen/_3sdp"
+                android:src="@drawable/location_tracker" />
+        </FrameLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/_2sdp">
+
+        <com.fnspl.hiplaretails.view.TextViewLight
+            android:id="@+id/tv_category_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_minus3sdp"
+            android:layout_marginTop="@dimen/_minus3sdp"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="car"
+            android:textSize="@dimen/_14ssp" />
+
+        <com.fnspl.hiplaretails.view.TextViewSamiBold
+            android:id="@+id/tv_category_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:paddingLeft="@dimen/_2sdp"
+            android:paddingRight="@dimen/_2sdp"
+            android:paddingBottom="@dimen/_3sdp"
+            android:text="RS 200"
+            android:textSize="@dimen/text_small" />
+    </LinearLayout>
+
+
+</LinearLayout>
